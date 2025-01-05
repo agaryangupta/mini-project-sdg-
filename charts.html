@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Details</title>
+    <link rel="stylesheet" href="charts.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="side-navigation">
+            <p><a href="index.html" style="color: white; text-decoration: none;">SDG Goals</a></p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-arrow-up">
+                <path d="m5 12 7-7 7 7" />
+                <path d="M12 19V5" />
+            </svg>
+            <div class="side-wrapper">
+                <a href="#sdg1"><div class="navigations"><b>1</b></div></a>
+                <a href="#sdg2"><div class="navigations"><b>2</b></div></a>
+                <a href="#sdg3"><div class="navigations"><b>3</b></div></a>
+                <a href="#sdg4"><div class="navigations"><b>4</b></div></a>
+                <a href="#sdg5"><div class="navigations"><b>5</b></div></a>
+                <a href="#sdg6"><div class="navigations"><b>6</b></div></a>
+                <a href="#sdg7"><div class="navigations"><b>7</b></div></a>
+                <a href="#sdg8"><div class="navigations"><b>8</b></div></a>
+                <a href="#sdg9"><div class="navigations"><b>9</b></div></a>
+                <a href="#sdg10"><div class="navigations"><b>10</b></div></a>
+                <a href="#sdg11"><div class="navigations"><b>11</b></div></a>
+                <a href="#sdg12"><div class="navigations"><b>12</b></div></a>
+                <a href="#sdg13"><div class="navigations"><b>13</b></div></a>
+                <a href="#sdg14"><div class="navigations"><b>14</b></div></a>
+                <a href="#sdg15"><div class="navigations"><b>15</b></div></a>
+                <a href="#sdg16"><div class="navigations"><b>16</b></div></a>
+                <a href="#sdg17"><div class="navigations"><b>17</b></div></a>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-arrow-down">
+                <path d="M12 5v14" />
+                <path d="m19 12-7 7-7-7" />
+            </svg>
+        </div>
+        <div class="details-container">
+            <section id="sdg1">
+                <h2>SDG 1: No Poverty</h2>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Population living below $1.90/day</h3>
+                        <div class="wrapper">
+                            <div id="sdg1-1-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg1-1-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>GINI index (income inequality)</h3>
+                        <div class="wrapper">
+                            <div id="sdg1-2-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg1-2-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Poverty headcount ratio at national poverty lines (% of population)</h3>
+                        <div class="wrapper">
+                            <div id="sdg1-3-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg1-3-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sdg2">
+                <h2>SDG 2: Zero Hunger</h2>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Prevalence of undernourishment (% of population)</h3>
+                        <div class="wrapper">
+                            <div id="sdg2-1-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg2-1-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Cereal yield (kg per hectare)</h3>
+                        <div class="wrapper">
+                            <div id="sdg2-2-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg2-2-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Prevalence of moderate or severe food insecurity</h3>
+                        <div class="wrapper">
+                            <div id="sdg2-3-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg2-3-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sdg3">
+                <h2>SDG 3: Good Health and Well-Being</h2>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Maternal mortality ratio (per 100,000 live births)</h3>
+                        <div class="wrapper">
+                            <div id="sdg3-1-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg3-1-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Infant mortality rate (per 1,000 live births)</h3>
+                        <div class="wrapper">
+                            <div id="sdg3-2-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg3-2-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Current health expenditure (% of GDP)</h3>
+                        <div class="wrapper">
+                            <div id="sdg3-3-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg3-3-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sdg4">
+                <h2>SDG 4: Quality Education</h2>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Net enrollment rate, primary (% of primary school age children)</h3>
+                        <div class="wrapper">
+                            <div id="sdg4-1-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg4-1-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Literacy rate, adult (% ages 15 and above)</h3>
+                        <div class="wrapper">
+                            <div id="sdg4-2-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg4-2-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Gross enrollment ratio, secondary (%)</h3>
+                        <div class="wrapper">
+                            <div id="sdg4-3-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg4-3-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="sdg5">
+                <h2>SDG 5: Gender Equality</h2>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Proportion of seats held by women in national parliaments (%)</h3>
+                        <div class="wrapper">
+                            <div id="sdg5-1-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg5-1-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Proportion of seats held by women in national parliaments (%)</h3>
+                        <div class="wrapper">
+                            <div id="sdg5-2-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg5-2-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sdg6">
+                <h2>SDG 6: Clean Water and Sanitation</h2>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Population using safely managed drinking water services (%)</h3>
+                        <div class="wrapper">
+                            <div id="sdg6-1-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg6-1-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Population using safely managed sanitation services (%)</h3>
+                        <div class="wrapper">
+                            <div id="sdg6-2-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg6-2-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sdg7">
+                <h2>SDG 7: Affordable and Clean Energy</h2>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Access to electricity (% of population)</h3>
+                        <div class="wrapper">
+                            <div id="sdg7-1-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg7-1-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Renewable energy consumption (% of total final energy consumption)</h3>
+                        <div class="wrapper">
+                            <div id="sdg7-2-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg7-2-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sdg8">
+                <h2>SDG 8: Decent Work and Economic Growth</h2>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Unemployment rate (% of total labor force)</h3>
+                        <div class="wrapper">
+                            <div id="sdg8-1-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg8-1-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>GDP (current US$)</h3>
+                        <div class="wrapper">
+                            <div id="sdg8-2-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg8-2-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section id="sdg9">
+                <h2>SDG 9: Industry, Innovation, and Infrastructure</h2>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Time required to start a business (days)</h3>
+                        <div class="wrapper">
+                            <div id="sdg9-1-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg9-1-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Internet users (% of population)</h3>
+                        <div class="wrapper">
+                            <div id="sdg9-2-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg9-2-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="sdg10">
+                <h2>SDG 10: Reduced Inequality</h2>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Income share held by lowest 20%</h3>
+                        <div class="wrapper">
+                            <div id="sdg10-1-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg10-1-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>GINI index</h3>
+                        <div class="wrapper">
+                            <div id="sdg10-2-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg10-2-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section id="sdg11">
+                <h2>SDG 11: Sustainable Cities and Communities</h2>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Population living in slums (% of urban population)</h3>
+                        <div class="wrapper">
+                            <div id="sdg11-1-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg11-1-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Urban population growth (annual %)</h3>
+                        <div class="wrapper">
+                            <div id="sdg11-2-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg11-2-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="sdg12">
+                <h2>SDG 12: Responsible Consumption and Production</h2>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>CO2 emissions (kt)</h3>
+                        <div class="wrapper">
+                            <div id="sdg12-1-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg12-1-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>GDP growth (annual %)</h3>
+                        <div class="wrapper">
+                            <div id="sdg12-2-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg12-2-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="sdg13">
+                <h2>SDG 13: Climate Action</h2>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>CO2 emissions (metric tons per capita)</h3>
+                        <div class="wrapper">
+                            <div id="sdg13-1-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg13-1-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Renewable electricity output (% of total electricity output)</h3>
+                        <div class="wrapper">
+                            <div id="sdg13-2-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg13-2-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="sdg14">
+                <h2>SDG 14: Life Below Water</h2>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Capture fisheries production (metric tons)</h3>
+                        <div class="wrapper">
+                            <div id="sdg14-1-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg14-1-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Forest area (% of land area)</h3>
+                        <div class="wrapper">
+                            <div id="sdg14-2-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg14-2-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="sdg15">
+                <h2>SDG 15: Life on Land</h2>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Terrestrial protected areas (% of total land area)</h3>
+                        <div class="wrapper">
+                            <div id="sdg15-1-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg15-1-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Forest area (% of land area)</h3>
+                        <div class="wrapper">
+                            <div id="sdg15-2-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg15-2-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sdg16">
+                <h2>SDG 16: Peace, Justice, and Strong Institutions</h2>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Intentional homicides (per 100,000 people)</h3>
+                        <div class="wrapper">
+                            <div id="sdg16-1-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg16-1-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Public spending on education, total (% of GDP)</h3>
+                        <div class="wrapper">
+                            <div id="sdg16-2-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg16-2-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="sdg17">
+                <h2>SDG 17: Partnerships for the Goals</h2>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Net official development assistance received (current US$)</h3>
+                        <div class="wrapper">
+                            <div id="sdg17-1-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg17-1-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas">
+                    <div class="canvas-container">
+                        <h3>Foreign direct investment, net inflows (% of GDP)</h3>
+                        <div class="wrapper">
+                            <div id="sdg17-2-data"></div>
+                            <div class="canvas-wrapper">
+                                <canvas id="sdg17-2-chart" height="100" width="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+            <script>
+                // Function to fetch and display data for each SDG and create a chart
+
+                async function fetchSDGData(apiUrl, elementId, chartId) {
+                    try {
+                        const response = await fetch(apiUrl);
+                        const data = await response.json();
+                        const element = document.getElementById(elementId);
+
+                        if (data && data[1]) {
+                            const filteredData = data[1].filter(entry => entry.value !== null);
+
+                            if (filteredData.length > 0) {
+                                // Sort data by date in descending order
+                                const sortedData = filteredData.sort((a, b) => b.date - a.date);
+
+                                let content = '<table border="1"><tr><th>Year</th><th>Value</th></tr>';
+                                const labels = [];
+                                const values = [];
+
+                                sortedData.forEach(entry => {
+                                    content += `<tr><td>${entry.date}</td><td>${entry.value}</td></tr>`;
+                                    labels.push(entry.date);
+                                    values.push(entry.value);
+                                });
+                                content += '</table>';
+                                element.innerHTML = content;
+
+                                // Create chart
+                                const ctx = document.getElementById(chartId).getContext('2d');
+                                new Chart(ctx, {
+                                    type: 'line',
+                                    data: {
+                                        labels: labels.reverse(), // Reverse for proper display in chart
+                                        datasets: [{
+                                            label: 'SDG Data',
+                                            data: values.reverse(), // Reverse for proper display in chart
+                                            borderColor: '#1A4D2E',
+                                            borderWidth: 5,
+                                            fill: false
+                                        }]
+                                    },
+                                    options: {
+                                        responsive: true,
+                                        scales: {
+                                            x: {
+                                                title: {
+                                                    display: true,
+                                                    text: 'Year'
+                                                }
+                                            },
+                                            y: {
+                                                title: {
+                                                    display: true,
+                                                    text: 'Value'
+                                                }
+                                            }
+                                        }
+                                    }
+                                });
+                            } else {
+                                element.innerHTML = 'No data available';
+                            }
+                        } else {
+                            element.innerHTML = 'No data available';
+                        }
+                    } catch (error) {
+                        console.error('Error fetching data:', error);
+                        document.getElementById(elementId).innerHTML = 'Error loading data';
+                    }
+                }
+
+
+                fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/SI.POV.DDAY?format=json', 'sdg1-1-data', 'sdg1-1-chart');  // Population living below $1.90/day
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/SI.POV.GINI?format=json', 'sdg1-2-data', 'sdg1-2-chart');  // GINI index (income inequality)
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/SI.POV.LMIC?format=json', 'sdg1-3-data', 'sdg1-3-chart');  // Poverty headcount ratio at national poverty lines (% of population)
+
+
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/SN.ITK.DEFC.ZS?format=json', 'sdg2-1-data', 'sdg2-1-chart');  // Prevalence of undernourishment (% of population)
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/AG.YLD.CREL.KG?format=json', 'sdg2-2-data', 'sdg2-2-chart');  // Cereal yield (kg per hectare)
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/SH.STA.MALN.ZS?format=json', 'sdg2-3-data', 'sdg2-3-chart');  // Prevalence of moderate or severe food insecurity
+
+
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/SH.STA.MMRT?format=json', 'sdg3-1-data', 'sdg3-1-chart');  // Maternal mortality ratio (per 100,000 live births)
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/SP.DYN.IMRT.IN?format=json', 'sdg3-2-data', 'sdg3-2-chart');  // Infant mortality rate (per 1,000 live births)
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/SH.XPD.CHEX.GD.ZS?format=json', 'sdg3-3-data', 'sdg3-3-chart');  // Current health expenditure (% of GDP)
+
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/SE.PRM.NENR?format=json', 'sdg4-1-data', 'sdg4-1-chart');  // Net enrollment rate, primary (% of primary school age children)
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/SE.ADT.LITR.ZS?format=json', 'sdg4-2-data', 'sdg4-2-chart');  // Literacy rate, adult (% ages 15 and above)
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/SE.SEC.ENRR?format=json', 'sdg4-3-data', 'sdg4-3-chart');  // Gross enrollment ratio, secondary (%)
+
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/SG.GEN.PARL.ZS?format=json', 'sdg5-1-data', 'sdg5-1-chart');  // Proportion of seats held by women in national parliaments (%)
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/SP.POP.TOTL.FE.ZS?format=json', 'sdg5-2-data', 'sdg5-2-chart');  // Female population (% of total population)
+
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/SH.H2O.SMDW.ZS?format=json', 'sdg6-1-data', 'sdg6-1-chart');  // Population using safely managed drinking water services (%)
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/SH.STA.SMSS.ZS?format=json', 'sdg6-2-data', 'sdg6-2-chart');  // Population using safely managed sanitation services (%)
+
+
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/EG.ELC.ACCS.ZS?format=json', 'sdg7-1-data', 'sdg7-1-chart');  // Access to electricity (% of population)
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/EG.FEC.RNEW.ZS?format=json', 'sdg7-2-data', 'sdg7-2-chart');  // Renewable energy consumption (% of total final energy consumption)
+
+
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/SL.UEM.TOTL.ZS?format=json', 'sdg8-1-data', 'sdg8-1-chart');  // Unemployment rate (% of total labor force)
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/NY.GDP.MKTP.CD?format=json', 'sdg8-2-data', 'sdg8-2-chart');  // GDP (current US$)
+
+
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/IC.REG.DURS?format=json', 'sdg9-1-data', 'sdg9-1-chart');  // Time required to start a business (days)
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/IT.NET.USER.ZS?format=json', 'sdg9-2-data', 'sdg9-2-chart');  // Internet users (% of population)
+
+
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/SI.DST.05TH.20?format=json', 'sdg10-1-data', 'sdg10-1-chart');  // Income share held by lowest 20%
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/SI.POV.GINI?format=json', 'sdg10-2-data', 'sdg10-2-chart');  // GINI index (income inequality)
+
+
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/EN.POP.SLUM.UR.ZS?format=json', 'sdg11-1-data', 'sdg11-1-chart');  // Population living in slums (% of urban population)
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/SP.URB.GROW?format=json', 'sdg11-2-data', 'sdg11-2-chart');  // Urban population growth (annual %)
+
+
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/EN.ATM.CO2E.KT?format=json', 'sdg12-1-data', 'sdg12-1-chart');  // CO2 emissions (kt)
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/NY.GDP.MKTP.KD.ZG?format=json', 'sdg12-2-data', 'sdg12-2-chart');  // GDP growth (annual %)
+
+
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/EN.ATM.CO2E.PC?format=json', 'sdg13-1-data', 'sdg13-1-chart');  // CO2 emissions (metric tons per capita)
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/EG.ELC.RNEW.ZS?format=json', 'sdg13-2-data', 'sdg13-2-chart');  // Renewable electricity output (% of total electricity output)
+
+
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/ER.FSH.CAPT.MT?format=json', 'sdg14-1-data', 'sdg14-1-chart');  // Capture fisheries production (metric tons)
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/AG.LND.FRST.ZS?format=json', 'sdg14-2-data', 'sdg14-2-chart');  // Forest area (% of land area)
+
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/ER.LND.PTLD.ZS?format=json', 'sdg15-1-data', 'sdg15-1-chart');  // Terrestrial protected areas (% of total land area)
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/AG.LND.FRST.ZS?format=json', 'sdg15-2-data', 'sdg15-2-chart');  // Forest area (% of land area)
+
+
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/VC.IHR.PSRC.P5?format=json', 'sdg16-1-data', 'sdg16-1-chart');  // Intentional homicides (per 100,000 people)
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/SE.XPD.TOTL.GD.ZS?format=json', 'sdg16-2-data', 'sdg16-2-chart');  // Public spending on education, total (% of GDP)
+
+
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/DT.ODA.ALLD.CD?format=json', 'sdg17-1-data', 'sdg17-1-chart');  // Net official development assistance received (current US$)
+fetchSDGData('https://api.worldbank.org/v2/country/IND/indicator/BX.KLT.DINV.WD.GD.ZS?format=json', 'sdg17-2-data', 'sdg17-2-chart');  // Foreign direct investment, net inflows (% of GDP)
+
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
